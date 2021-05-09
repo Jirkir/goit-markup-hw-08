@@ -1,0 +1,36 @@
+.section {
+  padding: 60px 0;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @extend %title;
+    font-weight: 700;
+    font-size: $section-title-font;
+    line-height: calc(33 / 28);
+    text-align: center;
+
+    @include adaptive-size(desktop) {
+      margin-bottom: 50px;
+      font-size: toRem(36);
+      line-height: calc(42 / 36);
+    }
+  }
+
+  &--accent-gray {
+    background-color: $secondary-bg-color;
+  }
+
+  @include adaptive-size(desktop) {
+    padding: 94px 0;
+    &--no-padding {
+      padding-top: 0;
+    }
+  }
+}
+
+.section__working {
+  @include adaptive-size(desktop-break) {
+    display: none;
+  }
+}

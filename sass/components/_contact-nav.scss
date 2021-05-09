@@ -37,4 +37,8 @@
   &__link:focus &__icon {
     fill: $accept-color;
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

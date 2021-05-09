@@ -1,1 +1,3 @@
-# goit-markup-hw-07
+﻿# goit-markup-hw-08
+
+8ДЗ HTML+CSS Адаптивная верстка

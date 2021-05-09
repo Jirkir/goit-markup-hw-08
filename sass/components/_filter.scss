@@ -1,0 +1,28 @@
+//* Filter */
+.filter-list {
+  @extend %list-no-style;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include adaptive-size(tablet-break) {
+    margin-bottom: -15px;
+  }
+
+  @include adaptive-size(tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @include adaptive-size(desktop) {
+    margin-bottom: 50px;
+  }
+}

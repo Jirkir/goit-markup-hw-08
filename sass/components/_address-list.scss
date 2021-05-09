@@ -1,0 +1,25 @@
+//* Address list */
+
+.address {
+  line-height: calc (24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
+  &__list {
+    @extend %list-no-style;
+  }
+  &__item--margin {
+    // margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+}
+.address__link {
+  text-decoration: none;
+  color: $footer-small-text;
+
+  @include animated(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

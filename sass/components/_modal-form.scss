@@ -1,0 +1,138 @@
+//* Modal form */
+
+.form__title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+
+  font-weight: 700;
+  text-align: center;
+
+  @extend %title;
+}
+
+.form__form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+.form__input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.form__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.42;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  padding: 12px 42px;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    & ~ .form__icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.form__input ~ .form__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__textarea {
+  padding: 12px 16px;
+
+  resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.form__input,
+.form__textarea {
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+  font-size: inherit;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition-property: border-color, fill;
+  @extend %animated;
+
+  outline: none;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__form-footer {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.form__checkbox,
+.form__icon-checkbox {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+}
+
+.form__icon-checkbox {
+  @include centered-flex(inline-flex);
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
+}
+
+.form__checkbox:checked + .form__icon-checkbox {
+  border-radius: 2px;
+  background-color: $accent-color;
+  border: none;
+}
+
+.form__policy {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: $card-set-gap;
+}
+.checkbox {
+  user-select: none;
+}
+.policy__link {
+  color: $accent-color;
+  text-decoration-line: underline;
+}
+
+.form__policy,
+.policy__link {
+  font-size: toRem(12);
+  line-height: calc(14 / 12);
+  @extend %paragraph;
+
+  @include adaptive-size(desktop) {
+    font-size: toRem(14);
+    line-height: calc(24 / 14);
+  }
+}

@@ -1,17 +1,26 @@
-@import "./utils/variables";
-@import "./base/base";
-@import "./components/site-header";
-@import "./components/logo";
-@import "./components/site-nav";
-@import "./components/contact-nav";
-@import "./components/site-hero";
-@import "./components/feature__list";
-@import "./components/section-skills";
-@import "./components/section-team";
-@import "./components/clients";
-@import "./components/portfolio-nav";
-@import "./components/portfolio";
-@import "./components/footer";
-@import "./components/form-subscribe";
-@import "./components/modal";
-@import "./components/checkbox";
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixin';
+@import './base/common';
+@import './base/visually-hidden';
+
+@import './layout/page-header';
+@import './components/logo';
+@import './components/menu-container';
+@import './components/mobile-social';
+@import './components/button';
+
+@import './layout/section';
+@import './components/modal';
+@import './components/modal-form';
+@import './layout/hero';
+
+@import './components/feature-list';
+@import './components/working-list';
+@import './components/team-list';
+@import './components/social-networks-list';
+@import './components/client-list';
+
+@import './layout/page-footer';
+@import './components/address-list';
+@import './components/subscribe';

@@ -1,9 +1,36 @@
-$primery-text-color: #212121;
-$title-text-color: #757575;
-$accept-color: #2196f3;
-$primery-bg-color: #ffffff;
-$accept-bg-color: #2f303a;
-$bg-color: #f5f4fa;
-$portfolio-box-gap: 30px;
-$border-card-content: 1px solid #eeeeee;
-$color-icon: #afb1b8;
+// Цвет основного текста #212121, 100 %
+// Вторичный стиль текста #757575
+// Текст в футере rgba(255, 255, 255, 0.6)
+// Белый #ffffff
+// Черный #000000
+// Акцент в макете #2196F3
+
+// Цвет фона вторичный #F5F4FA
+// Цвет фона третий #2F303A
+// Цвет фона четвертый #c4c4c4
+
+// Цвет ссылок #AFB1B8
+
+//* Colors
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$black-color: #000000;
+$secondary-bg-color: #f5f4fa;
+$third-bg-color: #2f303a;
+$fourth-bg-color: #c4c4c4;
+$grey-link-color: #afb1b8;
+$footer-small-text: rgba(255, 255, 255, 0.6);
+
+//* Fonts and font-sizes
+$main-font-size: 14px;
+$second-main-font-size: 16px;
+$section-title-font: 28px; //36
+$additional-font: 'Raleway', sans-serif;
+
+$card-set-gap: 30px;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$feature-list-icon: 'antenna', 'clock', 'diagram', 'astronaut';
