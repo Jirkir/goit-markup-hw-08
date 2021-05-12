@@ -463,7 +463,7 @@ svg {
 }
 
 .button-close {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 8px;
   width: 30px;
