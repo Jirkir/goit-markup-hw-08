@@ -73,7 +73,7 @@
 }
 
 .button-close {
-  position: absolute;
+  position: relative;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -92,6 +92,9 @@
 }
 
 .button-menu {
+  position: fixed;
+  top: 8px;
+  right: 8px;
   z-index: 3;
   justify-content: center;
   align-items: center;
